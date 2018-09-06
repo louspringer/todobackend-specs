@@ -44,7 +44,7 @@ var should = require('chai').should(),
                 .set('Content-Type', 'application/json')
                 .set('Accept', 'application/json')
                 .end(function (err, res) {
-                    expect(res).to.have.property('status', 201); 
+                    expect(res).to.have.property('status', 200); 
                     results.push(res);
                     done(); 
                 });
